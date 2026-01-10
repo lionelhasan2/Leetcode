@@ -21,7 +21,7 @@ def binary_search(arr, target):
     # Continue searching while the search space is valid
     while left <= right:
         # Find the middle index (prevents integer overflow in some languages)
-        mid = left + (right - left) // 2
+        mid = (left+right) // 2
         
         # Check if we found the target
         if arr[mid] == target:
