@@ -11,7 +11,7 @@ class Solution:
             if total > target or i > len(candidates)-1:
                 return
             
-            # i 
+            # j > i because j == i means its the first time we are seeing this number 
             for j in range(i,len(candidates)):
                 if j > i and candidates[j] == candidates[j-1]:
                     continue
